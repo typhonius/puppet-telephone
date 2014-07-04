@@ -3,8 +3,8 @@ describe 'telephone' do
   it do
     version = '1.1.4'
     should contain_package("Telephone-#{version}").with({
-      :provider => 'compressed_app',
-      :source   => "https://github.com/eofster/Telephone/archive/#{version}.zip",
+      :provider => 'appdmg',
+      :source   => "https://github.com/typhonius/puppet-telephone/blob/#{version}/Telephone.dmg?raw=true"
     })
   end
 end
